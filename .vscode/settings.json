@@ -1,0 +1,12 @@
+{
+    "[cpp]": {
+        
+        "editor.wordBasedSuggestions": false,
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true
+    },
+    "workbench.editor.enablePreview": false,
+    "editor.minimap.enabled": false,
+    "cmake.configureOnOpen": true,
+    "C_Cpp.default.compilerPath": "C:\\Users\\159859\\msys2\\ucrt64\\bin"
+}
