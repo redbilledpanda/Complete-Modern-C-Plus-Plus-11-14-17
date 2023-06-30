@@ -5,7 +5,7 @@ class Integer {
 public:
 	Integer();
 	Integer(int value);
-	Integer(const Integer &obj);
+	//Integer(const Integer &obj);
 	int GetValue()const;
 	void SetValue(int value);
 	~Integer();
