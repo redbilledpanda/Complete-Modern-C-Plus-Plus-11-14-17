@@ -1,17 +1,18 @@
 #include "Integer.h"
 #include <iostream>
-Integer::Integer() {
-	std::cout << "Integer()" << std::endl;
-	m_pInt = new int(0);
+
+/* @brief delegating ctor */
+Integer::Integer():Integer(0) {
+	std::cout << "Integer() working on object " << this << "." << std::endl;
 }
 
 Integer::Integer(int value) {
-	std::cout << "Integer(int)" << std::endl;
+	std::cout << "Integer(int), working on object " << this << "." << std::endl;
 	m_pInt = new int(value);
 }
 
 Integer::Integer(const Integer & obj) {
-	std::cout << "Integer(const Integer&)" << std::endl;
+	std::cout << "Integer(const Integer&) working on object " << this << "." << std::endl;
 	m_pInt = new int(*obj.m_pInt);
 }
 
@@ -25,6 +26,6 @@ void Integer::SetValue(int value) {
 }
 
 Integer::~Integer() {
-	std::cout << "~Integer()" << std::endl;
+	std::cout << "~Integer() working on object " << this << "." << std::endl;
 	delete m_pInt;
 }

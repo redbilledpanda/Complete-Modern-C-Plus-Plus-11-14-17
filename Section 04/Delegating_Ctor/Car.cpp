@@ -2,11 +2,11 @@
 #include <iostream>
 int Car::totalCount = 0;
 Car::Car():Car(0) {
-	std::cout << "Car()" << std::endl;
+	std::cout << "Car() working on object " << this << "." << std::endl;
 }
 
 Car::Car(float amount):Car(amount, 0) {
-	std::cout << "Car(float)" << std::endl;
+	std::cout << "Car(float) working on object " << this << "." << std::endl;
 
 }
 
@@ -14,7 +14,7 @@ Car::Car(float amount):Car(amount, 0) {
  * will delegate to this ctor to save on typing and 
  * code duplication */
 Car::Car(float amount, int pass) {
-	std::cout << "Car(float, int)" << std::endl;
+	std::cout << "Car(float, int) working on object " << this << "." << std::endl;
 	++totalCount;
 	fuel = amount;
 	speed = 0;
@@ -23,7 +23,7 @@ Car::Car(float amount, int pass) {
 
 Car::~Car() {
 	--totalCount;
-	std::cout << "~Car()" << std::endl; 
+	std::cout << "~Car() working on object " << this << "." << std::endl;
 }
 
 void Car::FillFuel(float amount) {

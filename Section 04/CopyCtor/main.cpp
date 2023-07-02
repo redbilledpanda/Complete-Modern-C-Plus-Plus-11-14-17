@@ -23,15 +23,24 @@ void CreateInteger() {
 	(*p).SetValue(3);
 	//std::cout << p->GetValue() << std::endl; 
 }
+
+/* even though the func is empty, we see that 
+ * the object is passed by value which neccesiates 
+ * invoking the copy ctor */
 void Process(Integer val) {
 
 }
 
 int main() {
-	Integer a(3);
-	/*auto b(std::move(a));
-	std::cout << a << std::endl;*/
-	Process(std::move(a));
+	//Integer a(3);
+
+	/* lets call the delegating ctor */
+	Integer b;
+	
+	/*auto b(std::move(a)) */
+	
+	/* this should invoke the copy ctor to create
+	 * a temp object for the sake of calling process */
+	Process(std::move(b));
 	return 0;
 }
-
