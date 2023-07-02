@@ -10,6 +10,9 @@ Car::Car(float amount):Car(amount, 0) {
 
 }
 
+/* @brief this here is the common ctor. Other ctors 
+ * will delegate to this ctor to save on typing and 
+ * code duplication */
 Car::Car(float amount, int pass) {
 	std::cout << "Car(float, int)" << std::endl;
 	++totalCount;
