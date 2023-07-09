@@ -2,6 +2,9 @@
 class Integer {
 	int m_Value{ 0 };
 public:
+	/* can only be used with functions that can 
+	 * be 'properly' synthesized by the compiler,
+	 * like dtor, copy ctor and assignment operator */
 	Integer() = default;
 	//Integer() {
 	//	m_Value = 0;

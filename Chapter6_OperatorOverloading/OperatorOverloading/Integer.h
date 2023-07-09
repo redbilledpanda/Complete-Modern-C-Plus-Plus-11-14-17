@@ -22,10 +22,16 @@ public:
 	Integer & operator =(const Integer &a);
 	//Move assignment
 	Integer & operator =(Integer &&a);
-	Integer operator +(const Integer & a)const;
+
+	/* @brief this method overloads the '+' operator. 
+	 * It takes a const reference to an 'Integer' object. 
+	 * It doesn't modify the object's state which is what the 
+	 * later const specifies */
+	Integer operator +(const Integer & a) const;
 
 	void operator ()();
 };
+
 Integer operator +(int x, const Integer &y);
 std::ostream & operator <<(std::ostream & out, const Integer &a);
 std::istream & operator >> (std::istream &input, Integer &a);
