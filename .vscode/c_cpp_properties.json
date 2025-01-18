@@ -1,4 +1,5 @@
 {
+    "_comment": "tested with lastest (as of now) vscode",
     "configurations": [
         {
             "name": "Win32",

@@ -1,4 +1,6 @@
 #include <iostream>
+//using namespace std;
+
 /*
 Difficult to use and prone to errors
 Also needs a null check
@@ -21,5 +23,10 @@ int main() {
 	Swap(a, b);
 	cout << "a:" << a << "\n";
 	cout << "b:" << b << "\n";
+
+	Swap(&a, &b);
+	cout << "a:" << a << "\n";
+	cout << "b:" << b << "\n";
+
 	return 0;
 }
