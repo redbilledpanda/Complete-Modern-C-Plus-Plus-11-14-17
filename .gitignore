@@ -364,3 +364,18 @@ FodyWeavers.xsd
 
 # Output binaries (windows)
 *.exe
+cmake_build_log.txt
+Section 02/section_build_log.txt
+Section 02/auto/AutoKeyword/AutoKeyword/CMakeLists.txt
+Section 02/BasicIO/BasicIO/CMakeLists.txt
+Section 02/const Qualifier and Compound Types/const qualifer/const qualifer/CMakeLists.txt
+Section 02/Default Function Args/DefaultFunctionArgs/DefaultFunctionArgs/CMakeLists.txt
+Section 02/First Program/First Program/CMakeLists.txt
+Section 02/Function Overloading/Function Overloading/Function Overloading/CMakeLists.txt
+Section 02/Function Pointers/Function Pointer/Function Pointer/CMakeLists.txt
+Section 02/Inline functions/Inline Functions/Inline Functions/CMakeLists.txt
+Section 02/Namespace/Namespace/Namespace/CMakeLists.txt
+Section 02/Pointers/Pointers/Pointers/CMakeLists.txt
+Section 02/Range-based for/ForEach/ForEach/CMakeLists.txt
+Section 02/Ref Vs Ptr/SwapFunction/SwapFunction/CMakeLists.txt
+Section 02/Reference/Reference/Reference/CMakeLists.txt

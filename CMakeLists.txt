@@ -83,3 +83,16 @@ foreach(subdir ${SUBDIRS})
 endforeach()
 
 file(APPEND ${TOPLEVEL_LOG_FILE} "\n✅ CMake processing completed successfully!\n")
+
+add_custom_target(clean_all
+COMMAND ${CMAKE_COMMAND} --build . --target clean
+COMMAND ${CMAKE_COMMAND} -E rm -rf 
+    "${CMAKE_BINARY_DIR}/CMakeCache.txt"
+    "${CMAKE_BINARY_DIR}/CMakeFiles"
+    "${CMAKE_BINARY_DIR}/cmake_install.cmake"
+    "${CMAKE_BINARY_DIR}/Makefile"
+    "${CMAKE_BINARY_DIR}/compile_commands.json"
+    "${CMAKE_BINARY_DIR}/Testing"
+COMMAND find "${CMAKE_SOURCE_DIR}" -type f -name "CMakeLists.txt" -exec grep "add_executable" {} \; -delete
+COMMENT "🧹 Cleaning all build files, including auto-generated leaf CMakeLists.txt..."
+)
