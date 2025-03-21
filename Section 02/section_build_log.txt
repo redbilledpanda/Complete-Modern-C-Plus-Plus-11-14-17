@@ -1,0 +1,41 @@
+CMake Build Log for Section02
+====================
+🗑 Deleted old CMakeLists.txt: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/BasicIO/BasicIO/CMakeLists.txt
+🗑 Deleted old CMakeLists.txt: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Default Function Args/DefaultFunctionArgs/DefaultFunctionArgs/CMakeLists.txt
+🗑 Deleted old CMakeLists.txt: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/First Program/First Program/CMakeLists.txt
+🗑 Deleted old CMakeLists.txt: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Function Overloading/Function Overloading/Function Overloading/CMakeLists.txt
+🗑 Deleted old CMakeLists.txt: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Function Pointers/Function Pointer/Function Pointer/CMakeLists.txt
+🗑 Deleted old CMakeLists.txt: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Inline functions/Inline Functions/Inline Functions/CMakeLists.txt
+🗑 Deleted old CMakeLists.txt: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Namespace/Namespace/Namespace/CMakeLists.txt
+🗑 Deleted old CMakeLists.txt: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Pointers/Pointers/Pointers/CMakeLists.txt
+🗑 Deleted old CMakeLists.txt: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Range-based for/ForEach/ForEach/CMakeLists.txt
+🗑 Deleted old CMakeLists.txt: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Ref Vs Ptr/SwapFunction/SwapFunction/CMakeLists.txt
+🗑 Deleted old CMakeLists.txt: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Reference/Reference/Reference/CMakeLists.txt
+🗑 Deleted old CMakeLists.txt: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/auto/AutoKeyword/AutoKeyword/CMakeLists.txt
+🗑 Deleted old CMakeLists.txt: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/const Qualifier and Compound Types/const qualifer/const qualifer/CMakeLists.txt
+🛠 Auto-generated CMakeLists.txt in /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/BasicIO/BasicIO
+✔ Adding leaf subdirectory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/BasicIO/BasicIO
+🛠 Auto-generated CMakeLists.txt in /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Default Function Args/DefaultFunctionArgs/DefaultFunctionArgs
+✔ Adding leaf subdirectory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Default Function Args/DefaultFunctionArgs/DefaultFunctionArgs
+🛠 Auto-generated CMakeLists.txt in /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/First Program/First Program
+✔ Adding leaf subdirectory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/First Program/First Program
+🛠 Auto-generated CMakeLists.txt in /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Function Overloading/Function Overloading/Function Overloading
+✔ Adding leaf subdirectory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Function Overloading/Function Overloading/Function Overloading
+🛠 Auto-generated CMakeLists.txt in /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Function Pointers/Function Pointer/Function Pointer
+✔ Adding leaf subdirectory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Function Pointers/Function Pointer/Function Pointer
+🛠 Auto-generated CMakeLists.txt in /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Inline functions/Inline Functions/Inline Functions
+✔ Adding leaf subdirectory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Inline functions/Inline Functions/Inline Functions
+🛠 Auto-generated CMakeLists.txt in /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Namespace/Namespace/Namespace
+✔ Adding leaf subdirectory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Namespace/Namespace/Namespace
+🛠 Auto-generated CMakeLists.txt in /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Pointers/Pointers/Pointers
+✔ Adding leaf subdirectory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Pointers/Pointers/Pointers
+🛠 Auto-generated CMakeLists.txt in /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Range-based for/ForEach/ForEach
+✔ Adding leaf subdirectory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Range-based for/ForEach/ForEach
+🛠 Auto-generated CMakeLists.txt in /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Ref Vs Ptr/SwapFunction/SwapFunction
+✔ Adding leaf subdirectory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Ref Vs Ptr/SwapFunction/SwapFunction
+🛠 Auto-generated CMakeLists.txt in /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Reference/Reference/Reference
+✔ Adding leaf subdirectory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/Reference/Reference/Reference
+🛠 Auto-generated CMakeLists.txt in /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/auto/AutoKeyword/AutoKeyword
+✔ Adding leaf subdirectory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/auto/AutoKeyword/AutoKeyword
+🛠 Auto-generated CMakeLists.txt in /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/const Qualifier and Compound Types/const qualifer/const qualifer
+✔ Adding leaf subdirectory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 02/const Qualifier and Compound Types/const qualifer/const qualifer

@@ -72,6 +72,29 @@ foreach(subdir ${SUBDIRS})
             file(APPEND ${TOPLEVEL_LOG_FILE} "✔ Adding section with CMakeLists.txt: ${DIR_NAME}\n")
             add_subdirectory(${subdir} ${DIR_NAME})  # Use the modified name
         elseif (contains_cpp AND NOT contains_subdirs)
+            has_cmake_lists(${subdir} has_cmake)
+            if(NOT has_cmake)
+                # Convert name safely
+                get_filename_component(SAFE_TARGET_NAME ${subdir} NAME)
+                string(REPLACE " " "_" SAFE_TARGET_NAME ${SAFE_TARGET_NAME})
+        
+                file(GLOB_RECURSE SOURCE_FILES "${subdir}/*.cpp")
+        
+                # Generate CMakeLists.txt
+                set(GENERATED_FILE "${subdir}/CMakeLists.txt")
+                file(WRITE ${GENERATED_FILE}
+                    "cmake_minimum_required(VERSION 3.16)\n"
+                    "project(${SAFE_TARGET_NAME})\n\n"
+                    "set(CMAKE_CXX_STANDARD 17)\n"
+                    "set(CMAKE_CXX_STANDARD_REQUIRED ON)\n\n"
+                    "file(GLOB_RECURSE SRC_FILES \"\${CMAKE_CURRENT_SOURCE_DIR}/*.cpp\")\n"
+                    "add_executable(${SAFE_TARGET_NAME} \${SRC_FILES})\n"
+                )
+        
+                message(STATUS "📝 Auto-generated CMakeLists.txt in: ${subdir}")
+                file(APPEND ${TOPLEVEL_LOG_FILE} "📝 Auto-generated leaf CMakeLists.txt in: ${subdir}\n")
+            endif()
+        
             message(STATUS "Adding single-source section: ${DIR_NAME}")
             file(APPEND ${TOPLEVEL_LOG_FILE} "✔ Adding single-source section: ${DIR_NAME}\n")
             add_subdirectory(${subdir} ${DIR_NAME})

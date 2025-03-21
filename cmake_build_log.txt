@@ -1,0 +1,28 @@
+CMake Build Log for CompleteModernCPP
+====================
+🔹 CMake started processing the project at /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17
+
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/.git
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/.vscode
+✔ Adding section with CMakeLists.txt: OperatorOverloading
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 01
+✔ Adding section with CMakeLists.txt: Section_02
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 03
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 04
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 05
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 07
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 08
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 09
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 10
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 11
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 12
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 13
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 14
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 15
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 16
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 17
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 18
+✔ Adding section with CMakeLists.txt: UserDefConversions
+⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/build
+
+✅ CMake processing completed successfully!

@@ -1,19 +1,20 @@
 {
-  "version": 3,
-  "configurePresets": [
-    {
-      "name": "ucrt64",
-      "displayName": "MSYS2 UCRT64",
-      "generator": "MinGW Makefiles",
-      "binaryDir": "${sourceDir}/build",
-      "cacheVariables": {
-        "CMAKE_C_COMPILER": "C:/msys64/ucrt64/bin/gcc.exe",
-        "CMAKE_CXX_COMPILER": "C:/msys64/ucrt64/bin/g++.exe",
-        "CMAKE_MAKE_PROGRAM": "C:/msys64/ucrt64/bin/mingw32-make.exe"
-      },
-      "environment": {
-        "PATH": "C:/msys64/ucrt64/bin;${env:PATH}"
+    "version": 3,
+    "configurePresets": [
+      {
+        "name": "linux-gcc",
+        "displayName": "Linux GCC",
+        "generator": "Unix Makefiles",
+        "binaryDir": "${sourceDir}/build",
+        "cacheVariables": {
+          "CMAKE_C_COMPILER": "/usr/bin/gcc",
+          "CMAKE_CXX_COMPILER": "/usr/bin/g++",
+          "CMAKE_MAKE_PROGRAM": "/usr/bin/make"
+        },
+        "environment": {
+          "PATH": "/usr/bin:${env:PATH}"
+        }
       }
-    }
-  ]
-}
+    ]
+  }
+  

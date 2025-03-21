@@ -364,3 +364,24 @@ FodyWeavers.xsd
 
 # Output binaries (windows)
 *.exe
+
+# Ignore top-level and section-level build dirs
+/build/
+/*/build/
+/**/build/
+
+# CMake intermediate files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+Testing/
+
+# Auto-generated leaf CMakeLists.txt (optional)
+# Comment out this if you want to track them manually
+**/CMakeLists.txt
+
+# ...but NOT the real ones at the root or section level:
+!/CMakeLists.txt
+!/Section_*/CMakeLists.txt

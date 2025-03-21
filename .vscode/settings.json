@@ -1,18 +1,9 @@
 {
-  "terminal.integrated.profiles.windows": {
-    "bash (MSYS2)": {
-      "path": "C:\\msys64\\usr\\bin\\bash.exe",
-      "args": ["--login", "-i"],
-      "env": {
-        "MSYSTEM": "UCRT64",
-        "CHERE_INVOKING": "1"
-      },
-      "icon": "terminal-bash"
-    }
-  },
-  "terminal.integrated.defaultProfile.windows": "bash (MSYS2)",
-  "cmake.useCMakePresets": "always",
-  "cmake.configurePreset": "ucrt64",
-  "cmake.buildDirectory": "${workspaceFolder}/build",
-  "cmake.logLevel": "DEBUG"
-  }
+    "cmake.cmakePath": "/usr/bin/cmake",
+    "cmake.generator": "Unix Makefiles",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureOnOpen": true,
+    "cmake.default.buildType": "Debug",
+    "cmake.preferredGenerators": ["Ninja", "Unix Makefiles"],
+    "terminal.integrated.defaultProfile.linux": "bash"
+}
