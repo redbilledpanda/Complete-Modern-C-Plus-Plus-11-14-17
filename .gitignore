@@ -390,3 +390,13 @@ Section 02/Pointers/Pointers/Pointers/CMakeLists.txt
 Section 02/Range-based for/ForEach/ForEach/CMakeLists.txt
 Section 02/Ref Vs Ptr/SwapFunction/SwapFunction/CMakeLists.txt
 Section 02/Reference/Reference/Reference/CMakeLists.txt
+cmake_build_log.txt
+Section 02/section_build_log.txt
+Section 04/class_car/CMakeLists.txt
+Section 04/CopyCtor/CMakeLists.txt
+Section 04/Default_Deleted_Func/CMakeLists.txt
+Section 04/structure/Structure/Structure/CMakeLists.txt
+cmake_build_log.txt
+Section 02/section_build_log.txt
+Section 04/section_build_log.txt
+Section 04/Delegating_Ctor/CMakeLists.txt
