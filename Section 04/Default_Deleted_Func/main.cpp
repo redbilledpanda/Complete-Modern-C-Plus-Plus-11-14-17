@@ -23,6 +23,6 @@ int main() {
 	Integer i1; 
 	i1.SetValue(5);
 	//Error as SetValue(float) is deleted
-	i1.SetValue(67.1f);
+	//i1.SetValue(67.1f);
 	return 0;
 }
