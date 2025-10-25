@@ -1,4 +1,4 @@
-#include "integer.h"
+#include "Integer.h"
 #include <memory>
 void Display(Integer *p) {
 	if(!p) {

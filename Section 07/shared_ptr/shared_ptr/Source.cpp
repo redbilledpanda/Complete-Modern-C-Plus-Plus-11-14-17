@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <memory>
 #include <string>
 
 class Project {
@@ -45,8 +46,8 @@ int main() {
 	}
 	
 	std::cout << "Reference count:" << prj.use_count() << '\n' ;
-	//ShowInfo(e1) ;
-	//ShowInfo(e2) ;
+	ShowInfo(e1) ;
+	ShowInfo(e2) ;
 	prj->ShowProjectDetails() ;
 
 }
