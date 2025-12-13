@@ -4,9 +4,8 @@ class Savings :
 	public Account {
 	float m_Rate;
 public:
-	Savings(const std::string &name, float balance, float rate);
-	~Savings();
+	Savings(const std::string &name, float balance, float rate, int accountNo = -1);
+	~Savings() override = default;
 	float GetInterestRate()const override;
 	void AccumulateInterest() override;
 };
-

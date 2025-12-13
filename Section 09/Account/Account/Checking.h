@@ -5,9 +5,8 @@ class Checking :
 	float m_MinimumBalance;
 public:
 	using Account::Account;
-	Checking(const std::string &name, float balance, float minbalance);
-	~Checking();
+	Checking(const std::string &name, float balance, float minbalance, int accountNo = -1);
+	~Checking() override = default;
 	void Withdraw(float amount)override;
-	float GetMinimumBalance()const;
+	[[nodiscard]] float GetMinimumBalance()const;
 };
-

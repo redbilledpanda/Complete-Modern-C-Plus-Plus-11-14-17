@@ -1,16 +1,16 @@
 #include "Account.h"
-#include <iostream>
+#include <stdexcept>
+
 int Account::s_ANGenerator = 1000;
-Account::Account(const std::string &name, float balance):
-m_Name(name), m_Balance(balance){
-	m_AccNo = ++s_ANGenerator;
-	//std::cout << "Account(const std::string &, float)" << std::endl; 
-}
-
-
-Account::~Account() {
-	//std::cout << "~Account()" << std::endl;
-
+Account::Account(const std::string &name, float balance, int accountNo) :
+	m_Name(name), m_Balance(balance) {
+	if (accountNo >= 0) {
+		m_AccNo = accountNo;
+		SyncAccountNumber(accountNo);
+	}
+	else {
+		m_AccNo = ++s_ANGenerator;
+	}
 }
 
 const std::string Account::GetName() const {
@@ -25,7 +25,14 @@ int Account::GetAccountNo() const {
 	return m_AccNo;
 }
 
+bool Account::IsClosed() const {
+	return m_Closed;
+}
+
 void Account::AccumulateInterest() {
+	if (m_Closed) {
+		throw std::runtime_error("Account is closed");
+	}
 }
 
 void Account::Withdraw(float amount) {
@@ -33,6 +40,9 @@ void Account::Withdraw(float amount) {
 	Balance should be greater than 0 & the amount
 	to withdraw should be less than balance
 	*/
+	if (m_Closed) {
+		throw std::runtime_error("Account is closed");
+	}
 	if (amount < m_Balance && m_Balance > 0)
 		m_Balance -= amount;
 	else {
@@ -43,9 +53,26 @@ void Account::Withdraw(float amount) {
 }
 
 void Account::Deposit(float amount) {
+	if (m_Closed) {
+		throw std::runtime_error("Account is closed");
+	}
 	m_Balance += amount;
 }
 
 float Account::GetInterestRate() const {
 	return 0.0f;
+}
+
+void Account::Close() {
+	m_Closed = true;
+}
+
+void Account::Reopen() {
+	m_Closed = false;
+}
+
+void Account::SyncAccountNumber(int lastIssued) {
+	if (lastIssued > s_ANGenerator) {
+		s_ANGenerator = lastIssued;
+	}
 }

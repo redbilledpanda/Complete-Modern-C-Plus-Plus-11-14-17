@@ -8,11 +8,11 @@ CMake Build Log for CompleteModernCPP
 ⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 01
 ✔ Adding section with CMakeLists.txt: Section_02
 ⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 03
-⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 04
+✔ Adding section with CMakeLists.txt: Section_04
 ⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 05
-⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 07
+✔ Adding section with CMakeLists.txt: Section_07
 ⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 08
-⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 09
+✔ Adding section with CMakeLists.txt: Section_09
 ⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 10
 ⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 11
 ⚠ Skipping redundant directory: /home/aijazbaig1/Complete-Modern-C-Plus-Plus-11-14-17/Section 12

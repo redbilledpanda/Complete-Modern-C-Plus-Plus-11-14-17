@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(Section04)  # Modify dynamically for other sections if needed
+project(Section07)  # Modify dynamically for other sections if needed
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)

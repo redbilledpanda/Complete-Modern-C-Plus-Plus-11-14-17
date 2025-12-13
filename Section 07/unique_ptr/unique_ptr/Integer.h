@@ -1,5 +1,7 @@
 #pragma once
 #include <iostream>
+#include <memory>
+
 class Integer {
 	int *m_pInt;
 public:
@@ -11,6 +13,8 @@ public:
 	Integer(const Integer &obj);
 	//Move constructor
 	Integer(Integer &&obj);
+	[[nodiscard]] static std::unique_ptr<Integer> Create();
+        [[nodiscard]] static std::unique_ptr<Integer> Create(int value);	
 	int GetValue()const;
 	void SetValue(int value);
 	~Integer();

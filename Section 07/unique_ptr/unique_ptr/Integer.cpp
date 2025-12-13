@@ -21,6 +21,14 @@ Integer::Integer(Integer && obj) {
 	obj.m_pInt = nullptr;
 }
 
+std::unique_ptr<Integer> Integer::Create() {
+        return std::make_unique<Integer>();
+}
+
+std::unique_ptr<Integer> Integer::Create(int value) {
+        return std::make_unique<Integer>(value);
+}
+
 int Integer::GetValue() const {
 	return *m_pInt;
 }
