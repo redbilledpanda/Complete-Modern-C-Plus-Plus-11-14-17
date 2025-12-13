@@ -1,5 +1,6 @@
 #include "Integer.h"
 #include <memory>
+
 void Display(Integer *p) {
 	if(!p) {
 		return ;
@@ -8,7 +9,7 @@ void Display(Integer *p) {
 }
 
 std::unique_ptr<Integer> GetPointer(int value) {
-		return std::make_unique<Integer>(value);
+	return std::make_unique<Integer>(value) ;
 }
 
 void Store(std::unique_ptr<Integer> &p) {
@@ -36,5 +37,6 @@ void Operate(int value) {
 }
 
 int main() {
-	Operate(5) ;
+	Operate(5);
+	return 0;
 }
