@@ -173,6 +173,7 @@ namespace {
 	}
 
 	std::string AccountType(const Account &account) {
+		// RTTI: detect the dynamic type to report it.
 		if (dynamic_cast<const Checking *>(&account) != nullptr) return "checking";
 		if (dynamic_cast<const Savings *>(&account) != nullptr) return "savings";
 		return "account";
@@ -194,6 +195,7 @@ namespace {
 		std::cout << "Balance: " << account.GetBalance() << '\n';
 		std::cout << "Status: " << (account.IsClosed() ? "closed" : "open") << '\n';
 
+		// RTTI: reveal derived-only details when present.
 		if (auto *checking = dynamic_cast<const Checking *>(&account)) {
 			std::cout << "Minimum balance requirement: " << checking->GetMinimumBalance() << '\n';
 		}
@@ -243,6 +245,7 @@ int main() {
 	auto persisted = LoadPersistedAccounts(kAccountFile);
 	Account::SyncAccountNumber(persisted.lastIssued);
 
+	// Polymorphism: store derived accounts via base pointers.
 	std::vector<std::unique_ptr<Account>> accounts;
 	accounts.reserve(5);
 	for (const auto &data : persisted.accounts) {
@@ -292,6 +295,7 @@ int main() {
 
 	bool running = true;
 	while (running) {
+		// Polymorphism: base reference bound to a derived object.
 		Account &account = *accounts[selectedIndex];
 
 		std::cout << "\nChoose an action:\n";
